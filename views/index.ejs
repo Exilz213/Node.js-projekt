@@ -4,17 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <% data.forEach(function (post) { %>
-        <% if(post.z != ''){ %>
-        <img src="<%= post.z %>">
-        <% } %> 
-        <%= post.title %>
-        <%= post.date %>
-        <p><%= post.text %></p>
-<% }) %>
-</head>
+    <link rel="stylesheet" type="text/css" href="/asserts/style.css">
+    <title>Post</title>
+</head>     
 <body>
-    
+    <div class="logo-box"></div>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="http://localhost:3000/post">Upload</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="post-box">
+        <% data.forEach(function(post) { %>
+            <% if(post.image !== ''){ %>
+                <div class="post">
+                    <img src="<%= post.image %>">
+                <% } %>
+                <h2><%= post.title %></h2>
+                <% if(post.audio !== ''){ %>
+                    <audio src="<%= post.audio %>" controls></audio>
+                <% } %>
+                <p><%= post.date %></p>
+                <p><%= post.text %></p>
+            </div>
+        <% }); %>
+    </div>
 </body>
 </html>

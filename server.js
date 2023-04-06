@@ -27,24 +27,25 @@ app.get('/', function(req,res){
             res.render('index', obj)
         }
     });
- });
- 
-app.post('/posted', upload.single('img'), function(req,res){
-   const title = req.body.title;
-   const text = req.body.text;
-   console.log(req);
-   //const img = "/uploads/" + req.body.img;
-   const img = "/uploads/" + req.file.filename;
-   const sqlInstert = "INSERT INTO post (title, text, image) VALUES (?, ?, ?);"
-   db.query(sqlInstert, [title, text, img], (err, result)=> {
-       if(err) {
-           throw err;
-       } else {
-           //res.render ('posted');
-           res.render('index')
-       }
-   });
 });
+ 
+app.post('/posted', upload.fields([{ name: 'img', maxCount: 1 }, { name: 'mp3', maxCount: 1 }]), function(req,res){
+    console.log(req.files['img'][0].filename);
+    const title = req.body.title;
+    const text = req.body.text;
+    const img = req.files['img'] ? "/uploads/" + req.files['img'][0].filename : null;
+    const audio = req.files['mp3'] ? "/uploads/" + req.files['mp3'][0].filename : null;
+    const sqlInstert = "INSERT INTO post (title, text, image, audio) VALUES (?, ?, ?, ?);"
+    db.query(sqlInstert, [title, text, img, audio], (err, result)=> {
+        if(err) {
+            throw err;
+        } else {
+            res.render('index')
+        }
+    });
+    });
+ 
+
 
 app.listen(process.env.PORT || 3000, function(){
     console.log('server, port 3000');
