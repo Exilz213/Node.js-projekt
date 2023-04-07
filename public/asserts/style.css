@@ -12,11 +12,26 @@
 }
 
 .logo-box {
-  height: 80px;
+  height: 100px;
   width: 1536x;
   background-color: #474747;
 }
 
+img {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  left: 40px;
+  top: 20px;
+  box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.386);
+}
+
+audio{
+  position: relative;
+  left: 250px;
+  bottom: 100px;
+}
 
 .navbar input[type=checkbox],
 .navbar .hamburger-lines {
@@ -36,9 +51,12 @@
   color: #000;
   opacity: 1;
   z-index: 100;
+  box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.386);
 }
 
 .navbar-container {
+  position: relative; 
+  left: 380px ;
   display: flex;
   justify-content: space-between;
   height: 64px;
@@ -69,7 +87,7 @@
 }
 
 .navbar a:hover {
-  color: #d31717;
+  color: #8c8c8c;
 }
 
 @media (max-width: 768px) {
@@ -141,11 +159,35 @@
 }
 
 .post-box {
-  position: absolute;
-  top: 200px;
-  left: 10px;
+  position: relative;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width:600px;
+  top: 80px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 45px;
+  box-shadow: 0 8px 6px -6px rgb(98, 98, 98);
 }
 
-.post {
-margin-bottom: 40px;
+.post-title{
+  position: relative;
+  left: 260px;
+  bottom: 110px;
+}
+
+.post-text{
+  position: relative;
+  bottom: 110px;
+  left: 260px;
+  color: #8D8D8D;
+}
+
+.post-date{
+  position: relative;
+  bottom: 230px;
+  left: 480px;
+  color: #8D8D8D;
 }

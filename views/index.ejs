@@ -17,27 +17,26 @@
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#">Button</a></li>
+                <li><a href="#">Browse</a></li>
                 <li><a href="#">Button</a></li>
                 <li><a href="#">Button</a></li>
                 <li><a href="http://localhost:3000/post">Upload</a></li>
             </ul>
         </div>
     </nav>
-    <div class="post-box">
         <% data.forEach(function(post) { %>
+            <div class="post-box">
             <% if(post.image !== ''){ %>
-                <div class="post">
                     <img src="<%= post.image %>">
                 <% } %>
-                <h2><%= post.title %></h2>
+                <h2 class="post-title"><%= post.title %></h2>
                 <% if(post.audio !== ''){ %>
                     <audio src="<%= post.audio %>" controls></audio>
                 <% } %>
-                <p><%= post.date %></p>
-                <p><%= post.text %></p>
+                <p class="post-date"><%= post.date %></p>
+                <p class="post-text"><%= post.text %></p>    
             </div>
         <% }); %>
-    </div>
+
 </body>
 </html>
