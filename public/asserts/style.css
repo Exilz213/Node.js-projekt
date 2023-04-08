@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .html {
   font-size: 62.5%;
 }
@@ -32,6 +36,7 @@ audio{
   left: 250px;
   bottom: 100px;
 }
+
 
 .navbar input[type=checkbox],
 .navbar .hamburger-lines {
@@ -176,6 +181,7 @@ audio{
   position: relative;
   left: 260px;
   bottom: 110px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .post-text{
@@ -183,6 +189,7 @@ audio{
   bottom: 110px;
   left: 260px;
   color: #8D8D8D;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .post-date{
@@ -190,4 +197,5 @@ audio{
   bottom: 230px;
   left: 480px;
   color: #8D8D8D;
+  font-family: Arial, Helvetica, sans-serif;
 }
