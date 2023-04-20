@@ -4,15 +4,29 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="/asserts/style.css">
    <title>Document</title>
 </head>
 <body>
-   <h2>
-       Post your music 
-   </h2>
-   <a href="/">Go back</a>
-   <br/><br/>
-    <form action="/posted" method="POST" enctype="multipart/form-data">
+   <div class="logo-box"></div>
+   <nav class="navbar">
+       <div class="navbar-container container">
+           <div class="hamburger-lines">
+               <span class="line line1"></span>
+               <span class="line line2"></span>
+               <span class="line line3"></span>
+           </div>
+           <ul class="menu-items">
+               <li><a href="http://localhost:3000/">Browse</a></li>
+               <li><a href="http://localhost:3000/post">Upload</a></li>
+               <li><a href="#">Log in</a></li>
+           </ul>
+       </div>
+   </nav>
+   <div class="post-your-music-box">       
+    <label for="post-your-music-title">Post Your Music</label>
+    <form class="post-your-music" action="/posted" method="POST" enctype="multipart/form-data">
+       <a href="/">Go back</a>
        <label for="title">Title</label>
        <input type="text" name="title" /><br/><br/>
        <label for="text">Text</label>
@@ -23,5 +37,6 @@
        <input type="file" accept="image/*" name="img" /><br/><br/>
        <button type="submit">Upload</button>
    </form>
+   </div>
 </body>
 </html>
