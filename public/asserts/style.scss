@@ -1,144 +1,438 @@
+
 *,
 *::after,
-*::before{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.html{
-    font-size: 62.5%;
+body {
+  overflow-x: hidden;
 }
 
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines{
-    display: none;
+.html {
+  font-size: 62.5%;
 }
 
-.container{
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
+
+
+.logo-box {
+  height: 100px;
+  width: 1536x;
+  background-color: #474747;
 }
 
-.navbar{
-    box-shadow: 0px 5px 10px 0px #aaa;
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    color: #000;
-    opacity: 0.85;
-    z-index: 100;
+.browse-text{
+  position: relative; 
+  left: 140px;
 }
 
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    height: 64px;
-    align-items: center;
+.browse-text2{
+  position: relative;
+  left: 100px;
 }
 
-.menu-items{
-    order: 2;
-    display: flex;
+.log-in-text{
+  position: relative;
+  left: 700px;
 }
-.logo{
-    order: 1;
-    font-size: 2.3rem;
-}
-
-.menu-items li{
-    list-style: none;
-    margin-left: 1.5rem;
-    font-size: 1.3rem;
+.log-out-text{
+  position: relative;
+  left: 620px;
 }
 
-.navbar a{
-    color: #444;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
+.upload-text{
+  position: relative;
+  left: 100px;
 }
 
-.navbar a:hover{
-    color: #117964;
+img {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  left: 40px;
+  top: 20px;
+  box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.386);
 }
 
-@media (max-width: 768px){
-    .navbar{
-        opacity: 0.95;
-    }
+audio{
+  position: relative;
+  left: 250px;
+  bottom: 100px;
+}
 
-    .navbar-container .hamburger-lines{
-        display: block;
-    }
 
-    .navbar-container{
-        display: block;
-        position: relative;
-        height: 64px;
-    }
+.navbar input[type=checkbox],
+.navbar .hamburger-lines {
+  display: none;
+}
 
-    .navbar-container .hamburger-lines{
-        display: block;
-        height: 28px;
-        width: 35px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
 
-    .navbar-container .hamburger-lines .line{
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background: #333;
-    }
+.navbar {
+  position: absolute;
+  width: 100%;
+  background: #606060;
+  color: #000;
+  opacity: 1;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.386);
+}
+
+.navbar-container {
+  position: relative; 
+  left: 380px ;
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #8c8c8c;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  
+  .logo-box{
+    position: relative;
+    width: 1100px;
+    height:200px;
+    right: 5px;
+  }
+  .navbar{
+    position: relative;
+    width: 1100px;
+    height: 120px;
+    right: 5px;
+  }
+
+  .navbar-container{
+    position: relative;
+    width: 950px;
+    height: 120px;
+  }
+
+
+  .menu-items{
+    position: relative;
+    width: 960px;
+    height: 120px;
+    right: 160px;
+  }
+
+  .browse-text{
+    position: relative; 
+    font-size:xxx-large;
+    top: 30px;
+  }
+
+  .log-in-text{
+    position: relative;
+    font-size:xxx-large;
+    top: 30px;
+    left: 420px;
+  }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .post-box{
+    position: relative;
+    left: 200px;
     
-    .navbar-container .hamburger-lines .line1{
-        transform-origin: 0% 0%;
-        transition: transform 0.3s ease-in-out;
-    }
+  }
 
-    .navbar-container .hamburger-lines .line2{
-        transition: transform 0.2s ease-in-out;
-    }
 
-    .navbar-container .hamburger-lines .line3{
-        transform-origin: 0% 100%;
-        transition: transform 0.3s ease-in-out;
-    }
 
-    .navbar .menu-items{
-        padding-top: 100px;
-        background: #fff;
-        height: 100vh;
-        max-width: 300px;
-        transform: translate(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        padding-left: 40px;
-        transition: transform 0.5s ease-in-out;
-        box-shadow:  5px 0px 10px 0px #aaa;
-        overflow: scroll;
-    }
+}
 
-    .navbar .menu-items li{
-        margin-bottom: 1.8rem;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
 
-    .logo{
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 2.5rem;
-    }
+.post-box {
+  position: relative;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width:600px;
+  top: 80px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 45px;
+  box-shadow: 0 8px 6px -6px rgb(98, 98, 98);
+}
+
+.post-title{
+  position: relative;
+  left: 260px;
+  bottom: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-text{
+  position: relative;
+  bottom: 110px;
+  left: 260px;
+  color: #8D8D8D;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-date{
+  position: relative;
+  bottom: 230px;
+  left: 480px;
+  color: #8D8D8D;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-your-music-box{
+  position: relative;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width:400px;
+  top: 80px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 45px;
+  box-shadow: 0 8px 6px -6px rgb(98, 98, 98);
+}
+
+.post-your-music-box a[href="/"] {
+  position: relative;
+  top: 5px;
+  left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+label[for="post-your-music-title"]{
+  position: relative;
+  top: 42px;
+  left: 120px;
+  font-size: 28px;
+}
+.post-your-music{
+  position: relative;
+  top: 20px;
+  left: 4px;
+}
+.post-your-music label[for="title"]{
+  position: relative;
+  top: 42px;
+  left: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-your-music label[for="text"] {
+  position: relative;
+  top: 40px;
+  left: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-your-music input[name="title"] {
+  position: relative;
+  left: 45px;
+  top: 40px;
+}
+
+.post-your-music input[name="text"] {
+  position: relative;
+  left:108px;
+  top: 40px;
+}
+
+.post-your-music label[for="mp3"] {
+  position: relative;
+  top: 20px;
+  left: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.post-your-music label[for="img"] {
+  position: relative;
+  top: 20px;
+  left: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-your-music input[type="file"] {
+  position: relative;
+  top: 20px;
+  left: 120px;
+}
+.post-your-music button[type="submit"] {
+  position: relative;
+  top: 20px;
+  left: 165px;
+}
+
+.post-your-music label[for="title"],
+.post-your-music label[for="text"],
+.post-your-music input[type="title"],
+.post-your-music input[type="text"],
+.post-your-music input[type="file"] {
+  margin-bottom: 20px;
+}
+
+
+label[for="sign-up-title"]{
+  position: relative;
+  top: 50px;
+  left: 136px;
+  font-size: 40px;
+}
+
+.sign-in-box{
+  position: relative;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width:400px;
+  top: 80px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 45px;
+  box-shadow: 0 8px 6px -6px rgb(98, 98, 98);
+}
+
+.post-your-music label[for="title"]{
+  position: relative;
+  top: 42px;
+  left: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-your-music label[for="text"] {
+  position: relative;
+  top: 40px;
+  left: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-in-box  label[for="username"] {
+  position: relative;
+  top: 140px;
+  right: 78px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-in-box  label[for="password"] {
+  position: relative;
+  top: 180px;
+  left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-in-box input[name="username"] {
+  position: relative;
+  right: 40px;
+  top: 140px;
+  
+}
+
+.sign-in-box input[name="password"] {
+  position: relative;
+  left: 100px;
+  top: 180px;
+}
+
+.sign-in-box button[type="submit"] {
+  position: relative;
+  top: 250px;
+  right: 94px;
+  height: 10%;
+  width: 20%;
+}
+
+label[for="log-in-title"]{
+  position: relative;
+  top: 50px;
+  left: 140px;
+  font-size: 40px;
+}
+
+.sign-up-login{
+  position: relative;
+  top: 248px;
+  right: 80px;
+}
+
+.log-in-box{
+  position: relative;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width:400px;
+  top: 80px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 45px;
+  box-shadow: 0 8px 6px -6px rgb(98, 98, 98);
+}
+
+.log-in-box  label[for="username"] {
+  position: relative;
+  top: 140px;
+  right: 54px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.log-in-box  label[for="password"] {
+  position: relative;
+  top: 180px;
+  left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.log-in-box input[name="username"] {
+  position: relative;
+  right: 16px;
+  top: 140px;
+  
+}
+
+.log-in-box input[name="password"] {
+  position: relative;
+  left: 100px;
+  top: 180px;
+}
+
+.log-in-box button[type="submit"] {
+  position: relative;
+  top: 250px;
+  right: 94px;
+  height: 10%;
+  width: 20%;
 }

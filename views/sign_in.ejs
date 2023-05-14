@@ -1,0 +1,30 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/asserts/style.css">
+  <title>Sign-in</title>
+</head> 
+<body>
+  <div class="logo-box"></div>
+  <nav class="navbar">
+      <div class="navbar-container container">
+          <ul class="menu-items">
+            <li><a class="browse-text" href="http://localhost:3000/">Browse</a></li>
+            <li><a class="log-in-text"href="http://localhost:3000/log_in">Log in</a></li>
+          </ul>
+      </div>
+  </nav>
+
+<form class = "sign-in-box" action="/sign_in" method="POST">
+  <label for="sign-up-title">Sign Up</label>
+
+  <label for="username">Username</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">Sign In</button>
+</form>
+</body>
