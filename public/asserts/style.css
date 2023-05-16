@@ -1,4 +1,3 @@
-
 *,
 *::after,
 *::before {
@@ -15,34 +14,33 @@ body {
   font-size: 62.5%;
 }
 
-
-
 .logo-box {
   height: 100px;
   width: 1536x;
   background-color: #474747;
 }
 
-.browse-text{
-  position: relative; 
+.browse-text {
+  position: relative;
   left: 140px;
 }
 
-.browse-text2{
+.browse-text2 {
   position: relative;
   left: 100px;
 }
 
-.log-in-text{
+.log-in-text {
   position: relative;
   left: 700px;
 }
-.log-out-text{
+
+.log-out-text {
   position: relative;
   left: 620px;
 }
 
-.upload-text{
+.upload-text {
   position: relative;
   left: 100px;
 }
@@ -57,12 +55,11 @@ img {
   box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.386);
 }
 
-audio{
+audio {
   position: relative;
   left: 250px;
   bottom: 100px;
 }
-
 
 .navbar input[type=checkbox],
 .navbar .hamburger-lines {
@@ -86,8 +83,8 @@ audio{
 }
 
 .navbar-container {
-  position: relative; 
-  left: 380px ;
+  position: relative;
+  left: 380px;
   display: flex;
   justify-content: space-between;
   height: 64px;
@@ -110,7 +107,6 @@ audio{
   font-size: 1.3rem;
 }
 
-
 .navbar a {
   color: #ffffff;
   text-decoration: none;
@@ -121,70 +117,85 @@ audio{
   color: #8c8c8c;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-  
-  .logo-box{
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .logo-box {
     position: relative;
-    width: 1100px;
-    height:200px;
+    width: 1420px;
+    height: 200px;
     right: 5px;
   }
-  .navbar{
+  .navbar {
     position: relative;
-    width: 1100px;
-    height: 120px;
-    right: 5px;
+    width: 1420px;
+    height: 160px;
+    right: 10px;
+    margin-bottom: 150px;
   }
-
-  .navbar-container{
+  .navbar-container {
     position: relative;
     width: 950px;
-    height: 120px;
+    height: 140px;
   }
-
-
-  .menu-items{
+  .menu-items {
     position: relative;
     width: 960px;
     height: 120px;
     right: 160px;
   }
-
-  .browse-text{
-    position: relative; 
-    font-size:xxx-large;
-    top: 30px;
-  }
-
-  .log-in-text{
+  .browse-text {
     position: relative;
-    font-size:xxx-large;
-    top: 30px;
-    left: 420px;
+    font-size: 8vh;
+    top: 36px;
   }
-
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .post-box{
+  .log-in-text {
     position: relative;
-    left: 200px;
-    
+    font-size: 8vh;
+    top: 36px;
+    left: 460px;
   }
-
-
-
+  .post-box {
+    position: relative;
+    left: 360px;
+    scale: 200%;
+    margin: 300px;
+    top: 100px;
+  }
+  .log-in-box{
+    position: relative;
+    left: 460px;
+    scale:260%;
+    margin-top: 100px;
+  }
+  .post-your-music-box{
+    position: relative;
+    left: 460px;
+    scale:260%;
+  }
+  .browse-text2{
+    position: relative;
+    font-size: 8vh;
+    top: 36px;
+    left: 30px;
+  }
+  .upload-text{
+    position: relative;
+    font-size: 8vh;
+    top: 36px;
+  }
+  .log-out-text{
+    position: relative;
+    font-size: 8vh;
+    top: 36px;
+    left: 240px;
+  }
 }
-
-
 .post-box {
   position: relative;
   height: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  width:600px;
+  width: 600px;
   top: 80px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -192,14 +203,14 @@ audio{
   box-shadow: 0 8px 6px -6px rgb(98, 98, 98);
 }
 
-.post-title{
+.post-title {
   position: relative;
   left: 260px;
   bottom: 110px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-text{
+.post-text {
   position: relative;
   bottom: 110px;
   left: 260px;
@@ -207,7 +218,7 @@ audio{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-date{
+.post-date {
   position: relative;
   bottom: 230px;
   left: 480px;
@@ -215,13 +226,13 @@ audio{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-your-music-box{
+.post-your-music-box {
   position: relative;
   height: 350px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  width:400px;
+  width: 400px;
   top: 80px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -235,90 +246,94 @@ audio{
   left: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
-label[for="post-your-music-title"]{
+
+label[for=post-your-music-title] {
   position: relative;
   top: 42px;
   left: 120px;
   font-size: 28px;
 }
-.post-your-music{
+
+.post-your-music {
   position: relative;
   top: 20px;
   left: 4px;
 }
-.post-your-music label[for="title"]{
+
+.post-your-music label[for=title] {
   position: relative;
   top: 42px;
   left: 35px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-your-music label[for="text"] {
+.post-your-music label[for=text] {
   position: relative;
   top: 40px;
   left: 100px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-your-music input[name="title"] {
+.post-your-music input[name=title] {
   position: relative;
   left: 45px;
   top: 40px;
 }
 
-.post-your-music input[name="text"] {
+.post-your-music input[name=text] {
   position: relative;
-  left:108px;
+  left: 108px;
   top: 40px;
 }
 
-.post-your-music label[for="mp3"] {
-  position: relative;
-  top: 20px;
-  left: 110px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.post-your-music label[for="img"] {
+.post-your-music label[for=mp3] {
   position: relative;
   top: 20px;
   left: 110px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-your-music input[type="file"] {
+.post-your-music label[for=img] {
+  position: relative;
+  top: 20px;
+  left: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-your-music input[type=file] {
   position: relative;
   top: 20px;
   left: 120px;
 }
-.post-your-music button[type="submit"] {
+
+.post-your-music button[type=submit] {
   position: relative;
   top: 20px;
   left: 165px;
 }
 
-.post-your-music label[for="title"],
-.post-your-music label[for="text"],
-.post-your-music input[type="title"],
-.post-your-music input[type="text"],
-.post-your-music input[type="file"] {
+.post-your-music label[for=title],
+.post-your-music label[for=text],
+.post-your-music input[type=title],
+.post-your-music input[type=text],
+.post-your-music input[type=file] {
   margin-bottom: 20px;
 }
 
-
-label[for="sign-up-title"]{
+label[for=sign-up-title] {
   position: relative;
   top: 50px;
   left: 136px;
   font-size: 40px;
 }
 
-.sign-in-box{
+.sign-in-box {
   position: relative;
   height: 350px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  width:400px;
+  width: 400px;
   top: 80px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -326,48 +341,47 @@ label[for="sign-up-title"]{
   box-shadow: 0 8px 6px -6px rgb(98, 98, 98);
 }
 
-.post-your-music label[for="title"]{
+.post-your-music label[for=title] {
   position: relative;
   top: 42px;
   left: 35px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-your-music label[for="text"] {
+.post-your-music label[for=text] {
   position: relative;
   top: 40px;
   left: 100px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.sign-in-box  label[for="username"] {
+.sign-in-box label[for=username] {
   position: relative;
   top: 140px;
   right: 78px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.sign-in-box  label[for="password"] {
+.sign-in-box label[for=password] {
   position: relative;
   top: 180px;
   left: 60px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.sign-in-box input[name="username"] {
+.sign-in-box input[name=username] {
   position: relative;
   right: 40px;
   top: 140px;
-  
 }
 
-.sign-in-box input[name="password"] {
+.sign-in-box input[name=password] {
   position: relative;
   left: 100px;
   top: 180px;
 }
 
-.sign-in-box button[type="submit"] {
+.sign-in-box button[type=submit] {
   position: relative;
   top: 250px;
   right: 94px;
@@ -375,26 +389,26 @@ label[for="sign-up-title"]{
   width: 20%;
 }
 
-label[for="log-in-title"]{
+label[for=log-in-title] {
   position: relative;
   top: 50px;
   left: 140px;
   font-size: 40px;
 }
 
-.sign-up-login{
+.sign-up-login {
   position: relative;
   top: 248px;
   right: 80px;
 }
 
-.log-in-box{
+.log-in-box {
   position: relative;
   height: 350px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  width:400px;
+  width: 400px;
   top: 80px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -402,37 +416,36 @@ label[for="log-in-title"]{
   box-shadow: 0 8px 6px -6px rgb(98, 98, 98);
 }
 
-.log-in-box  label[for="username"] {
+.log-in-box label[for=username] {
   position: relative;
   top: 140px;
   right: 54px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.log-in-box  label[for="password"] {
+.log-in-box label[for=password] {
   position: relative;
   top: 180px;
   left: 60px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.log-in-box input[name="username"] {
+.log-in-box input[name=username] {
   position: relative;
   right: 16px;
   top: 140px;
-  
 }
 
-.log-in-box input[name="password"] {
+.log-in-box input[name=password] {
   position: relative;
   left: 100px;
   top: 180px;
 }
 
-.log-in-box button[type="submit"] {
+.log-in-box button[type=submit] {
   position: relative;
   top: 250px;
   right: 94px;
   height: 10%;
   width: 20%;
-}
+}/*# sourceMappingURL=style.css.map */

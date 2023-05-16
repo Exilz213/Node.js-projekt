@@ -148,7 +148,7 @@ audio{
     position: relative;
     width: 960px;
     height: 120px;
-    right: 160px;
+    right: 240px;
   }
 
   .browse-text{
@@ -161,22 +161,14 @@ audio{
     position: relative;
     font-size:xxx-large;
     top: 30px;
-    left: 420px;
+    left: 300px;
   }
-
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .post-box{
-    position: relative;
+    position: none;
     left: 200px;
     
   }
-
-
-
 }
-
 
 .post-box {
   position: relative;

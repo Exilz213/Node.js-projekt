@@ -17,6 +17,7 @@
             </ul>
         </div>
     </nav>
+    <div class="post-container">
         <% data.forEach(function(post) { %>
             <div class="post-box">
             <% if(post.image !== ''){ %>
@@ -30,5 +31,7 @@
                 <p class="post-text"><%= post.text %></p>    
             </div>
         <% }); %>
-</body>
-</html>
+    </div>   
+    <div class="footer"></div>
+    </body>
+    </html>

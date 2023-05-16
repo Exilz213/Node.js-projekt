@@ -21,7 +21,9 @@ app.get('/post', function(req,res){
    res.render('post')
 });
 
-
+app.get('/posted', function(req,res){
+  res.render('posted')
+});
 
 app.get('/sign_in', function(req,res){
     res.render('sign_in')
@@ -186,7 +188,7 @@ app.post('/posted', upload.fields([{ name: 'img', maxCount: 1 }, { name: 'mp3', 
         if(err) {
             throw err;
         } else {
-            res.render('index')
+            res.render('posted')
         }
     });
     });
